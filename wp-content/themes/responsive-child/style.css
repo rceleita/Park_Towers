@@ -1,0 +1,272 @@
+/*
+Theme Name: Park Towers
+Description: Park Towers Custom Theme.
+Version: 2.0.1
+Author: John Manlove Marketing and Communications
+Author URI: http://www.johnmanlove.com
+Template: responsive
+*/
+/* =======================================================
+	TYPOGRAPHY
+======================================================= */
+* {
+  color: #496368;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300 !important;
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #496368;
+  color: white; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #496368;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 1.75em; }
+
+h2 {
+  font-size: 1.3em;
+  letter-spacing: 5px;
+  margin-bottom: 2em; }
+
+h3 {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 700 !important; }
+
+a,
+#copyright_link {
+  color: #496368 !important;
+  text-decoration: underline;
+  text-transform: uppercase; }
+
+/* =======================================================
+	TYPOGRAPHY
+======================================================= */
+body #container,
+body #footer {
+  padding: 0 !important;
+  max-width: 100% !important; }
+body #container .skip-container {
+  padding: 0; }
+body #container #header .header-img {
+  width: 100%; }
+body #container #header .main-nav {
+  position: fixed;
+  top: 60px;
+  z-index: 1000; }
+  body #container #header .main-nav .menu {
+    background-color: black;
+    background-image: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 20px; }
+    body #container #header .main-nav .menu li {
+      background-color: transparent !important;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      float: none;
+      transition: all .2s; }
+      body #container #header .main-nav .menu li .sub-menu {
+        display: none !important; }
+      body #container #header .main-nav .menu li a {
+        background-color: transparent;
+        border-left: 0 none;
+        font-size: .8em;
+        height: 60px;
+        line-height: 60px;
+        padding: 0em 1.7em;
+        text-transform: uppercase;
+        transition: color, .2s; }
+        body #container #header .main-nav .menu li a:hover {
+          background-color: transparent;
+          background-image: none;
+          color: #dfe229 !important; }
+      body #container #header .main-nav .menu li.current_page_item a {
+        color: #dfe229 !important; }
+      body #container #header .main-nav .menu li.home {
+        background: url("/Park_Towers/wp-content/uploads/2016/03/icon_home.png") 1.2em 0 no-repeat; }
+        body #container #header .main-nav .menu li.home:hover, body #container #header .main-nav .menu li.home.current_page_item {
+          background: url("/Park_Towers/wp-content/uploads/2016/03/icon_home_over.png") 1.2em 0 no-repeat; }
+      body #container #header .main-nav .menu li.towers {
+        background: url("/Park_Towers/wp-content/uploads/2016/03/icon_towers.png") 1.2em 0 no-repeat; }
+        body #container #header .main-nav .menu li.towers:hover, body #container #header .main-nav .menu li.towers.current_page_item {
+          background: url("/Park_Towers/wp-content/uploads/2016/03/icon_towers_over.png") 1.2em 0 no-repeat; }
+      body #container #header .main-nav .menu li.space {
+        background: url("/Park_Towers/wp-content/uploads/2016/03/icon_space.png") 1.2em 0 no-repeat; }
+        body #container #header .main-nav .menu li.space:hover, body #container #header .main-nav .menu li.space.current_page_item {
+          background: url("/Park_Towers/wp-content/uploads/2016/03/icon_space_over.png") 1.2em 0 no-repeat; }
+      body #container #header .main-nav .menu li.amenities {
+        background: url("/Park_Towers/wp-content/uploads/2016/03/icon_amenities.png") 1.2em 0 no-repeat; }
+        body #container #header .main-nav .menu li.amenities:hover, body #container #header .main-nav .menu li.amenities.current_page_item {
+          background: url("/Park_Towers/wp-content/uploads/2016/03/icon_amenities_over.png") 1.2em 0 no-repeat; }
+      body #container #header .main-nav .menu li.loc {
+        background: url("/Park_Towers/wp-content/uploads/2016/03/icon_loc.png") 1.2em 0 no-repeat; }
+        body #container #header .main-nav .menu li.loc:hover, body #container #header .main-nav .menu li.loc.current_page_item {
+          background: url("/Park_Towers/wp-content/uploads/2016/03/icon_loc_over.png") 1.2em 0 no-repeat; }
+      body #container #header .main-nav .menu li.news {
+        background: url("/Park_Towers/wp-content/uploads/2016/03/icon_news.png") 1.2em 0 no-repeat; }
+        body #container #header .main-nav .menu li.news:hover, body #container #header .main-nav .menu li.news.current_page_item {
+          background: url("/Park_Towers/wp-content/uploads/2016/03/icon_news_over.png") 1.2em 0 no-repeat; }
+body #container #header #top-widget {
+  float: none;
+  width: 100%; }
+  body #container #header #top-widget ul {
+    text-align: center; }
+    body #container #header #top-widget ul.menu {
+      background-color: #496368 !important;
+      background-image: none !important; }
+      body #container #header #top-widget ul.menu li {
+        display: inline-block;
+        float: none; }
+        body #container #header #top-widget ul.menu li a {
+          border-left: 0 none;
+          color: white !important;
+          height: 40px;
+          line-height: 40px;
+          text-shadow: none !important;
+          transition: all .3s; }
+          body #container #header #top-widget ul.menu li a:hover {
+            background-image: none !important;
+            background-color: transparent !important; }
+            body #container #header #top-widget ul.menu li a:hover::before, body #container #header #top-widget ul.menu li a:hover::after {
+              opacity: 1;
+              -webkit-transform: translateX(0px);
+              -moz-transform: translateX(0px);
+              transform: translateX(0px); }
+          body #container #header #top-widget ul.menu li a::before, body #container #header #top-widget ul.menu li a::after {
+            display: inline-block;
+            opacity: 0;
+            -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+            -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+            transition: transform 0.3s, opacity 0.2s; }
+          body #container #header #top-widget ul.menu li a::before {
+            margin-right: 10px;
+            content: '[';
+            -webkit-transform: translateX(20px);
+            -moz-transform: translateX(20px);
+            transform: translateX(20px); }
+          body #container #header #top-widget ul.menu li a::after {
+            margin-left: 10px;
+            content: ']';
+            -webkit-transform: translateX(-20px);
+            -moz-transform: translateX(-20px);
+            transform: translateX(-20px); }
+        body #container #header #top-widget ul.menu li.current_page_item a, body #container #header #top-widget ul.menu li.current-menu-item a {
+          background-color: transparent !important; }
+        body #container #header #top-widget ul.menu li:hover {
+          background-color: transparent; }
+body #container #wrapper {
+  background-color: transparent;
+  border: 0 none;
+  margin: 0px auto;
+  padding: 0; }
+  body #container #wrapper #content-full {
+    margin-top: 30px; }
+    body #container #wrapper #content-full .breadcrumb-list {
+      display: none; }
+    body #container #wrapper #content-full .margin-top {
+      margin-top: -75px;
+      position: relative;
+      z-index: 1000; }
+  body #container #wrapper .post-entry .su-row {
+    margin-bottom: 3em;
+    padding: 0px 4em; }
+    body #container #wrapper .post-entry .su-row .su-column h3 {
+      text-transform: uppercase; }
+    body #container #wrapper .post-entry .su-row .su-column .gallery {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      body #container #wrapper .post-entry .su-row .su-column .gallery li {
+        display: inline-block;
+        margin-right: 20px; }
+        body #container #wrapper .post-entry .su-row .su-column .gallery li a {
+          border: 3px solid transparent;
+          display: block;
+          transition: all .3s; }
+          body #container #wrapper .post-entry .su-row .su-column .gallery li a:hover {
+            border-color: #496368; }
+          body #container #wrapper .post-entry .su-row .su-column .gallery li a img {
+            border: 0 none;
+            margin: 0; }
+        body #container #wrapper .post-entry .su-row .su-column .gallery li:last-of-type {
+          margin-right: 0; }
+    body #container #wrapper .post-entry .su-row.space {
+      background: url("/Park_Towers/wp-content/uploads/2016/03/gallery_002.jpg") 0 0 no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 0%;
+      background-size: cover;
+      padding: 4em; }
+      body #container #wrapper .post-entry .su-row.space h3,
+      body #container #wrapper .post-entry .su-row.space p,
+      body #container #wrapper .post-entry .su-row.space a {
+        color: white;
+        text-shadow: 1px 1px black; }
+    body #container #wrapper .post-entry .su-row.map {
+      padding-left: 0;
+      padding-right: 0;
+      position: relative; }
+      body #container #wrapper .post-entry .su-row.map p {
+        margin: 0; }
+      body #container #wrapper .post-entry .su-row.map .overlay {
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        top: 400px;
+        margin-top: -400px; }
+      body #container #wrapper .post-entry .su-row.map iframe {
+        width: 100%; }
+    body #container #wrapper .post-entry .su-row.stack_plan {
+      padding-left: 0;
+      padding-right: 0; }
+      body #container #wrapper .post-entry .su-row.stack_plan img {
+        width: 100%; }
+    body #container #wrapper .post-entry .su-row.lounge {
+      background: url("/Park_Towers/wp-content/uploads/2016/03/bgd_bath.jpg") 0 0 no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 0%;
+      background-size: cover;
+      padding: 4em; }
+    body #container #wrapper .post-entry .su-row.parks {
+      background: url("/Park_Towers/wp-content/uploads/2016/03/bgd_parks.jpg") 0 0 no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 0%;
+      background-size: cover;
+      padding: 4em; }
+    body #container #wrapper .post-entry .su-row.bike {
+      margin-top: -4em; }
+  body #container #wrapper #content-blog {
+    padding: 0px 4em; }
+    body #container #wrapper #content-blog .post-meta,
+    body #container #wrapper #content-blog .post-data {
+      display: none; }
+    body #container #wrapper #content-blog .entry-title a {
+      color: black;
+      font-weight: 500; }
+body #footer #footer-wrapper #footer_widget .col-300 {
+  width: 20%; }
+  body #footer #footer-wrapper #footer_widget .col-300 .widget-wrapper {
+    background-color: transparent;
+    border: 0 none; }
+    body #footer #footer-wrapper #footer_widget .col-300 .widget-wrapper img {
+      margin: 0px auto; }
+  body #footer #footer-wrapper #footer_widget .col-300:nth-child(2) {
+    width: 55%; }
+    body #footer #footer-wrapper #footer_widget .col-300:nth-child(2) .textwidget {
+      font-size: 1.25em;
+      line-height: 4em; }
+body #footer .copyright {
+  float: right;
+  text-align: right; }
+body.home .su-column-size-1-1 {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
