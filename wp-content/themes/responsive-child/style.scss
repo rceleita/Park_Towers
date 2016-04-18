@@ -363,7 +363,6 @@ body {
 							color: white;
 							text-shadow: 1px 1px black;
 						}
-					}
 
 					&.map {
 						padding-left: 0;
@@ -387,6 +386,7 @@ body {
 							width: 100%;
 						}
 					}
+				}
 
 					&.stack_plan {
 						padding-left: 0;
@@ -395,7 +395,22 @@ body {
 						img {
 							width: 100%;
 						}
-					}
+
+						svg > g > *[id^="flr-"],
+						svg > g > g[id^="flr-"] > polygon {
+							transition: all .3s;
+						}
+							svg > g > *[id^="flr-"]:hover,
+							svg > g > g[id^="flr-"]:hover > polygon {
+								cursor: pointer;
+								fill: #dfe229 !important;
+							}
+								svg > g > *[id^="flr-"]:hover + g,
+								svg > g > g[id^="flr-"]:hover + g {
+									display: block !important;
+								}
+						}
+					
 
 					&.lounge {
 						@include bgd-img(2016, '03', bgd_bath, jpg, 0, 0, no-repeat);

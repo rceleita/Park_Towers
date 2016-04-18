@@ -209,26 +209,36 @@ body #container #wrapper {
       body #container #wrapper .post-entry .su-row.space a {
         color: white;
         text-shadow: 1px 1px black; }
-    body #container #wrapper .post-entry .su-row.map {
-      padding-left: 0;
-      padding-right: 0;
-      position: relative; }
-      body #container #wrapper .post-entry .su-row.map p {
-        margin: 0; }
-      body #container #wrapper .post-entry .su-row.map .overlay {
-        background: transparent;
-        position: absolute;
-        width: 100%;
-        height: 400px;
-        top: 400px;
-        margin-top: -400px; }
-      body #container #wrapper .post-entry .su-row.map iframe {
-        width: 100%; }
+      body #container #wrapper .post-entry .su-row.space.map {
+        padding-left: 0;
+        padding-right: 0;
+        position: relative; }
+        body #container #wrapper .post-entry .su-row.space.map p {
+          margin: 0; }
+        body #container #wrapper .post-entry .su-row.space.map .overlay {
+          background: transparent;
+          position: absolute;
+          width: 100%;
+          height: 400px;
+          top: 400px;
+          margin-top: -400px; }
+        body #container #wrapper .post-entry .su-row.space.map iframe {
+          width: 100%; }
     body #container #wrapper .post-entry .su-row.stack_plan {
       padding-left: 0;
       padding-right: 0; }
       body #container #wrapper .post-entry .su-row.stack_plan img {
         width: 100%; }
+      body #container #wrapper .post-entry .su-row.stack_plan svg > g > *[id^="flr-"],
+      body #container #wrapper .post-entry .su-row.stack_plan svg > g > g[id^="flr-"] > polygon {
+        transition: all .3s; }
+      body #container #wrapper .post-entry .su-row.stack_plan svg > g > *[id^="flr-"]:hover,
+      body #container #wrapper .post-entry .su-row.stack_plan svg > g > g[id^="flr-"]:hover > polygon {
+        cursor: pointer;
+        fill: #dfe229 !important; }
+      body #container #wrapper .post-entry .su-row.stack_plan svg > g > *[id^="flr-"]:hover + g,
+      body #container #wrapper .post-entry .su-row.stack_plan svg > g > g[id^="flr-"]:hover + g {
+        display: block !important; }
     body #container #wrapper .post-entry .su-row.lounge {
       background: url("/Park_Towers/wp-content/uploads/2016/03/bgd_bath.jpg") 0 0 no-repeat;
       background-attachment: fixed;
